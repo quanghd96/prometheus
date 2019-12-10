@@ -14,6 +14,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -yqq update && \
     apt-get -yqq upgrade && \
     apt-get -yqq install curl && \
+    apt-get -yqq install nano && \
     apt-get -yqq install supervisor && \
     rm -rf /var/lib/apt/lists/*
 
